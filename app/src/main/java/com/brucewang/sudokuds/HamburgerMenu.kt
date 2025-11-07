@@ -21,7 +21,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
 /**
- * 汉堡菜单组件
+ * 菜单组件
  */
 @Composable
 fun HamburgerMenu(

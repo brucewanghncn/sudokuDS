@@ -5,7 +5,7 @@
     <string name="menu_title">菜单</string>
     <string name="menu_settings">设置</string>
     <string name="menu_swap_screens">交换上下屏</string>
-    <string name="menu_switch_language">切换语言</string>
+    <string name="menu_switch_language">Switch Language</string>
     <string name="menu_instructions">操作说明</string>
     <string name="menu_exit">退出程序</string>
 

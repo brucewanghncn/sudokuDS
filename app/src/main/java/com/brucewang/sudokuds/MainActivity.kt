@@ -83,6 +83,7 @@ class MainActivity : ComponentActivity() {
                             },
                             onInstructions = {
                                 showMenu = false
+                                ActivityLifecycleSync.isSettingsOpen = true
                                 val intent = Intent(this@MainActivity, InstructionsActivity::class.java)
                                 startActivity(intent)
                             },

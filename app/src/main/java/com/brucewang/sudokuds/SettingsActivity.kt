@@ -85,45 +85,17 @@ fun SettingsScreen(onBackClick: () -> Unit) {
                 .padding(16.dp)
         ) {
             Text(
-                text = "显示设置",
+                text = "设置选项",
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
 
-            // 自动交换屏幕
             SettingsItem(
-                title = "自动交换屏幕",
-                description = "定时自动交换主副屏显示内容",
-                checked = autoSwapEnabled,
-                onCheckedChange = { autoSwapEnabled = it }
-            )
-
-            HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
-
-            // 保持屏幕常亮
-            SettingsItem(
-                title = "保持屏幕常亮",
-                description = "防止屏幕自动休眠",
+                title = "好像没啥需要设置的",
+                description = "确实没有",
                 checked = keepScreenOn,
                 onCheckedChange = { keepScreenOn = it }
-            )
-
-            HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
-
-            Text(
-                text = "通知设置",
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.primary,
-                modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
-            )
-
-            // 显示通知
-            SettingsItem(
-                title = "显示通知",
-                description = "在状态栏显示应用通知",
-                checked = showNotifications,
-                onCheckedChange = { showNotifications = it }
             )
 
             HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
@@ -136,12 +108,17 @@ fun SettingsScreen(onBackClick: () -> Unit) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "双屏显示应用",
+                    text = "双屏数独",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
                 Text(
-                    text = "版本 1.0.0",
+                    text = "brucewanghncn",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Text(
+                    text = "版本 1.0",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

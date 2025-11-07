@@ -75,6 +75,7 @@ class SecondaryActivity : ComponentActivity() {
                             },
                             onInstructions = {
                                 showMenu = false
+                                ActivityLifecycleSync.isSettingsOpen = true
                                 val intent = Intent(this@SecondaryActivity, InstructionsActivity::class.java)
                                 startActivity(intent)
                             },

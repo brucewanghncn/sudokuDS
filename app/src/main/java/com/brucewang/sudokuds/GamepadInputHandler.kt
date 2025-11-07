@@ -137,16 +137,16 @@ object GamepadInputHandler {
             KeyEvent.KEYCODE_BUTTON_B -> SudokuGame.clearValue()
 
             // X键 - 数字1
-            KeyEvent.KEYCODE_BUTTON_X -> SudokuGame.setValue(1)
+            // KeyEvent.KEYCODE_BUTTON_X -> SudokuGame.setValue(1)
 
             // Y键 - 数字2
-            KeyEvent.KEYCODE_BUTTON_Y -> SudokuGame.setValue(2)
+            // KeyEvent.KEYCODE_BUTTON_Y -> SudokuGame.setValue(2)
 
             // L1键 - 数字3
-            KeyEvent.KEYCODE_BUTTON_L1 -> SudokuGame.setValue(3)
+            // KeyEvent.KEYCODE_BUTTON_L1 -> SudokuGame.setValue(3)
 
             // R1键 - 数字4
-            KeyEvent.KEYCODE_BUTTON_R1 -> SudokuGame.setValue(4)
+            // KeyEvent.KEYCODE_BUTTON_R1 -> SudokuGame.setValue(4)
 
             // START键 - 重新开始
             KeyEvent.KEYCODE_BUTTON_START -> SudokuGame.startNewGame()

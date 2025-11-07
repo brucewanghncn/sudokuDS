@@ -5,7 +5,7 @@
     <string name="menu_title">Menu</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_swap_screens">Swap Screens</string>
-    <string name="menu_switch_language">Switch Language</string>
+    <string name="menu_switch_language">切换语言</string>
     <string name="menu_instructions">Instructions</string>
     <string name="menu_exit">Exit</string>
 
