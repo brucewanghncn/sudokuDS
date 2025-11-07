@@ -39,7 +39,7 @@
 
     <!-- Sudoku Game -->
     <string name="sudoku_title">Sudoku Game</string>
-    <string name="sudoku_press_to_start">Press any button to start</string>
+    <string name="sudoku_press_to_start">Press button A/start to start</string>
     <string name="sudoku_time">Time</string>
     <string name="sudoku_complete">Complete!</string>
     <string name="sudoku_new_game">New Game</string>

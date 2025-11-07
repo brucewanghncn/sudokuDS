@@ -90,7 +90,7 @@ fun SudokuControlPanel(modifier: Modifier = Modifier) {
                         onClick = { SudokuGame.startNewGame(difficulty = 30) },
                         modifier = Modifier
                             .width(160.dp)
-                            .height(100.dp),
+                            .height(160.dp),
                         colors = ButtonDefaults.buttonColors(
                             containerColor = MaterialTheme.colorScheme.primary
                         )
@@ -120,7 +120,7 @@ fun SudokuControlPanel(modifier: Modifier = Modifier) {
                         onClick = { SudokuGame.startNewGame(difficulty = 40) },
                         modifier = Modifier
                             .width(160.dp)
-                            .height(100.dp),
+                            .height(160.dp),
                         colors = ButtonDefaults.buttonColors(
                             containerColor = MaterialTheme.colorScheme.secondary
                         )
@@ -150,7 +150,7 @@ fun SudokuControlPanel(modifier: Modifier = Modifier) {
                         onClick = { SudokuGame.startNewGame(difficulty = 50) },
                         modifier = Modifier
                             .width(160.dp)
-                            .height(100.dp),
+                            .height(160.dp),
                         colors = ButtonDefaults.buttonColors(
                             containerColor = MaterialTheme.colorScheme.tertiary
                         )
@@ -186,7 +186,7 @@ fun SudokuControlPanel(modifier: Modifier = Modifier) {
                             .width(280.dp)
                             .height(80.dp),
                         colors = ButtonDefaults.buttonColors(
-                            containerColor = MaterialTheme.colorScheme.surfaceVariant
+                            containerColor = MaterialTheme.colorScheme.error
                         )
                     ) {
                         Text(

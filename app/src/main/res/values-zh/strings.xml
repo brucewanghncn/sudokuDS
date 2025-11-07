@@ -39,11 +39,11 @@
 
     <!-- 数独游戏 -->
     <string name="sudoku_title">数独游戏</string>
-    <string name="sudoku_press_to_start">按任意按钮开始游戏</string>
+    <string name="sudoku_press_to_start">按A键/start键开始游戏</string>
     <string name="sudoku_time">时间</string>
     <string name="sudoku_complete">完成！</string>
     <string name="sudoku_new_game">新游戏</string>
-    <string name="sudoku_continue_game">继续游戏</string>
+    <string name="sudoku_continue_game">继续上局游戏</string>
     <string name="sudoku_undo">撤销</string>
     <string name="sudoku_remove">擦除</string>
     <string name="sudoku_erase">擦除</string>
