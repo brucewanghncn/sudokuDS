@@ -13,6 +13,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.brucewang.sudokuds.ui.theme.DualScreenTheme
 
@@ -62,12 +63,12 @@ fun SettingsScreen(onBackClick: () -> Unit) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("设置") },
+                title = { Text(stringResource(R.string.settings_title)) },
                 navigationIcon = {
                     IconButton(onClick = onBackClick) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "返回"
+                            contentDescription = stringResource(R.string.settings_back)
                         )
                     }
                 },
@@ -85,15 +86,15 @@ fun SettingsScreen(onBackClick: () -> Unit) {
                 .padding(16.dp)
         ) {
             Text(
-                text = "设置选项",
+                text = stringResource(R.string.settings_options),
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
 
             SettingsItem(
-                title = "好像没啥需要设置的",
-                description = "确实没有",
+                title = stringResource(R.string.settings_nothing_to_set),
+                description = stringResource(R.string.settings_nothing_desc),
                 checked = keepScreenOn,
                 onCheckedChange = { keepScreenOn = it }
             )
@@ -108,17 +109,17 @@ fun SettingsScreen(onBackClick: () -> Unit) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "双屏数独",
+                    text = stringResource(R.string.settings_app_name),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
                 Text(
-                    text = "brucewanghncn",
+                    text = stringResource(R.string.settings_author),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
                 Text(
-                    text = "版本 1.0",
+                    text = stringResource(R.string.settings_version),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

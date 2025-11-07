@@ -1,5 +1,6 @@
 package com.brucewang.sudokuds
 
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback
@@ -20,12 +21,12 @@ import androidx.compose.ui.unit.sp
 import com.brucewang.sudokuds.ui.theme.DualScreenTheme
 
 class InstructionsActivity : ComponentActivity() {
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(LanguageManager.wrap(newBase))
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // 应用语言设置
-        val language = LanguageManager.getSavedLanguage(this)
-        LanguageManager.applyLanguage(this, language)
 
         enableEdgeToEdge()
 
@@ -138,7 +139,7 @@ fun InstructionSection(
                 modifier = Modifier.padding(bottom = 12.dp)
             )
 
-            items.forEachIndexed { index, item ->
+            items.forEach { item ->
                 Row(
                     modifier = Modifier.padding(vertical = 4.dp)
                 ) {

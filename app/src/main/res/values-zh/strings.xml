@@ -13,6 +13,13 @@
     <string name="settings_title">设置</string>
     <string name="settings_display">显示设置</string>
     <string name="settings_notifications">通知设置</string>
+    <string name="settings_options">设置选项</string>
+    <string name="settings_nothing_to_set">好像没啥需要设置的</string>
+    <string name="settings_nothing_desc">确实没有</string>
+    <string name="settings_app_name">双屏数独</string>
+    <string name="settings_author">brucewanghncn</string>
+    <string name="settings_version">版本 1.0</string>
+    <string name="settings_back">返回</string>
 
     <!-- 操作说明 -->
     <string name="instructions_title">操作说明</string>

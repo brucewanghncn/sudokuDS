@@ -13,6 +13,13 @@
     <string name="settings_title">Settings</string>
     <string name="settings_display">Display Settings</string>
     <string name="settings_notifications">Notification Settings</string>
+    <string name="settings_options">Settings Options</string>
+    <string name="settings_nothing_to_set">Nothing to set here</string>
+    <string name="settings_nothing_desc">Really nothing</string>
+    <string name="settings_app_name">Dual Screen Sudoku</string>
+    <string name="settings_author">brucewanghncn</string>
+    <string name="settings_version">Version 1.0</string>
+    <string name="settings_back">Back</string>
 
     <!-- Instructions -->
     <string name="instructions_title">Instructions</string>
