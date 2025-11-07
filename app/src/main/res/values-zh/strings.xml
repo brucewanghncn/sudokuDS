@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">数独双屏版</string>
+
+    <!-- 菜单 -->
+    <string name="menu_title">菜单</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_swap_screens">交换上下屏</string>
+    <string name="menu_switch_language">切换语言</string>
+    <string name="menu_instructions">操作说明</string>
+    <string name="menu_exit">退出程序</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_display">显示设置</string>
+    <string name="settings_notifications">通知设置</string>
+
+    <!-- 操作说明 -->
+    <string name="instructions_title">操作说明</string>
+    <string name="instructions_gamepad">手柄操作</string>
+    <string name="instructions_gamepad_dpad">方向键/左摇杆：移动选中格子</string>
+    <string name="instructions_gamepad_buttons">数字键：填写/标记数字</string>
+    <string name="instructions_gamepad_back">Back键：打开菜单</string>
+    <string name="instructions_game">游戏说明</string>
+    <string name="instructions_game_rule">数独规则：每行、每列、每个3x3宫格内数字1-9不重复</string>
+    <string name="instructions_game_difficulty">难度选择：简单30空格、中等40空格、困难50空格</string>
+    <string name="instructions_game_note">备注模式：可在格子中标记可能的数字</string>
+    <string name="instructions_game_save">自动存档：退出时自动保存，下次可继续游戏</string>
+    <string name="instructions_screens">双屏说明</string>
+    <string name="instructions_screens_main">下屏：显示数字键盘和控制按钮</string>
+    <string name="instructions_screens_secondary">上屏：显示数独棋盘和游戏状态</string>
+
+
+    <!-- 数独游戏 -->
+    <string name="sudoku_title">数独游戏</string>
+    <string name="sudoku_press_to_start">按任意按钮开始游戏</string>
+    <string name="sudoku_time">时间</string>
+    <string name="sudoku_complete">完成！</string>
+    <string name="sudoku_new_game">新游戏</string>
+    <string name="sudoku_continue_game">继续游戏</string>
+    <string name="sudoku_undo">撤销</string>
+    <string name="sudoku_remove">擦除</string>
+    <string name="sudoku_erase">擦除</string>
+    <string name="sudoku_difficulty">选择难度</string>
+    <string name="sudoku_easy">简单</string>
+    <string name="sudoku_medium">中等</string>
+    <string name="sudoku_hard">困难</string>
+    <string name="sudoku_empty_cells_30">30空格</string>
+    <string name="sudoku_empty_cells_40">40空格</string>
+    <string name="sudoku_empty_cells_50">50空格</string>
+    <string name="sudoku_note_mode">标记备注</string>
+    <string name="sudoku_fill_mode">填写数字</string>
+    <string name="sudoku_save">存档</string>
+    <string name="sudoku_load">读档</string>
+    <string name="sudoku_save_success">✓ 存档成功</string>
+    <string name="sudoku_save_failed">✗ 存档失败</string>
+    <string name="sudoku_load_success">✓ 读取成功</string>
+    <string name="sudoku_load_failed">✗ 读取失败</string>
+    <string name="sudoku_restart">重新开始</string>
+</resources>
+

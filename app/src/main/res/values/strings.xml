@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">SudokuDS</string>
+
+    <!-- Menu -->
+    <string name="menu_title">Menu</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_swap_screens">Swap Screens</string>
+    <string name="menu_switch_language">Switch Language</string>
+    <string name="menu_instructions">Instructions</string>
+    <string name="menu_exit">Exit</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_display">Display Settings</string>
+    <string name="settings_notifications">Notification Settings</string>
+
+    <!-- Instructions -->
+    <string name="instructions_title">Instructions</string>
+    <string name="instructions_gamepad">Gamepad Controls</string>
+    <string name="instructions_gamepad_dpad">D-Pad/Left Stick: Move selected cell</string>
+    <string name="instructions_gamepad_buttons">Number Keys: Fill/Mark numbers</string>
+    <string name="instructions_gamepad_back">Back Button: Open menu</string>
+    <string name="instructions_game">Game Rules</string>
+    <string name="instructions_game_rule">Sudoku Rule: Each row, column, and 3x3 box must contain digits 1-9 without repetition</string>
+    <string name="instructions_game_difficulty">Difficulty: Easy 30 cells, Medium 40 cells, Hard 50 cells</string>
+    <string name="instructions_game_note">Note Mode: Mark possible numbers in cells</string>
+    <string name="instructions_game_save">Auto Save: Game saves on exit, continue next time</string>
+    <string name="instructions_screens">Dual Screen</string>
+    <string name="instructions_screens_main">Bottom Screen: Number pad and control buttons</string>
+    <string name="instructions_screens_secondary">Top Screen: Sudoku board and game status</string>
+
+
+    <!-- Sudoku Game -->
+    <string name="sudoku_title">Sudoku Game</string>
+    <string name="sudoku_press_to_start">Press any button to start</string>
+    <string name="sudoku_time">Time</string>
+    <string name="sudoku_complete">Complete!</string>
+    <string name="sudoku_new_game">New Game</string>
+    <string name="sudoku_continue_game">Continue</string>
+    <string name="sudoku_undo">Undo</string>
+    <string name="sudoku_remove">Remove</string>
+    <string name="sudoku_erase">Erase</string>
+    <string name="sudoku_difficulty">Select Difficulty</string>
+    <string name="sudoku_easy">Easy</string>
+    <string name="sudoku_medium">Medium</string>
+    <string name="sudoku_hard">Hard</string>
+    <string name="sudoku_empty_cells_30">30 Cells</string>
+    <string name="sudoku_empty_cells_40">40 Cells</string>
+    <string name="sudoku_empty_cells_50">50 Cells</string>
+    <string name="sudoku_note_mode">Note Mode</string>
+    <string name="sudoku_fill_mode">Fill Mode</string>
+    <string name="sudoku_save">Save</string>
+    <string name="sudoku_load">Load</string>
+    <string name="sudoku_save_success">✓ Save Successful</string>
+    <string name="sudoku_save_failed">✗ Save Failed</string>
+    <string name="sudoku_load_success">✓ Load Successful</string>
+    <string name="sudoku_load_failed">✗ Load Failed</string>
+    <string name="sudoku_restart">Restart</string>
+</resources>
