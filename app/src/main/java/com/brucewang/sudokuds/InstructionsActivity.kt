@@ -27,13 +27,13 @@ class InstructionsActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         enableEdgeToEdge()
 
         setContent {
             DualScreenTheme {
-                InstructionsScreen(
+                SettingsScreen(
                     onBackClick = {
+                        ActivityLifecycleSync.isSettingsOpen = false
                         finish()
                     }
                 )
@@ -42,10 +42,17 @@ class InstructionsActivity : ComponentActivity() {
             // 处理系统返回按钮
             onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
                 override fun handleOnBackPressed() {
+                    ActivityLifecycleSync.isSettingsOpen = false
                     finish()
                 }
             })
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        // 确保在Activity销毁时重置标志
+        ActivityLifecycleSync.isSettingsOpen = false
     }
 }
 

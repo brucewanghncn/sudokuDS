@@ -20,6 +20,7 @@ object SudokuStateStorage {
     private const val KEY_START_TIME = "start_time"
     private const val KEY_MISTAKES = "mistakes"
     private const val KEY_HIGHLIGHTED_NUMBER = "highlighted_number"
+    private const val KEY_EMPTY_CELLS_COUNT = "empty_cells_count"
 
     // 手动存档的键
     private const val KEY_MANUAL_HAS_SAVED = "manual_has_saved"
@@ -28,6 +29,7 @@ object SudokuStateStorage {
     private const val KEY_MANUAL_SELECTED_COL = "manual_selected_col"
     private const val KEY_MANUAL_MISTAKES = "manual_mistakes"
     private const val KEY_MANUAL_HIGHLIGHTED_NUMBER = "manual_highlighted_number"
+    private const val KEY_MANUAL_EMPTY_CELLS_COUNT = "manual_empty_cells_count"
 
     private val gson = Gson()
 
@@ -53,6 +55,7 @@ object SudokuStateStorage {
         editor.putLong(KEY_START_TIME, startTime)
         editor.putInt(KEY_MISTAKES, gameState.mistakes)
         editor.putInt(KEY_HIGHLIGHTED_NUMBER, gameState.highlightedNumber)
+        editor.putInt(KEY_EMPTY_CELLS_COUNT, gameState.emptyCellsCount)
 
         editor.apply()
     }
@@ -80,6 +83,7 @@ object SudokuStateStorage {
             val startTime = prefs.getLong(KEY_START_TIME, System.currentTimeMillis())
             val mistakes = prefs.getInt(KEY_MISTAKES, 0)
             val highlightedNumber = prefs.getInt(KEY_HIGHLIGHTED_NUMBER, 0)
+            val emptyCellsCount = prefs.getInt(KEY_EMPTY_CELLS_COUNT, 40)
 
             // 重新检查完成状态和错误状态
             val updatedBoard = board.mapIndexed { r, rowData ->
@@ -97,7 +101,8 @@ object SudokuStateStorage {
                 elapsedTime = elapsedTime,
                 isComplete = isComplete,
                 mistakes = mistakes,
-                highlightedNumber = highlightedNumber
+                highlightedNumber = highlightedNumber,
+                emptyCellsCount = emptyCellsCount
             )
 
             return Pair(gameState, startTime)
@@ -140,6 +145,7 @@ object SudokuStateStorage {
             editor.putInt(KEY_MANUAL_SELECTED_COL, gameState.selectedCol)
             editor.putInt(KEY_MANUAL_MISTAKES, gameState.mistakes)
             editor.putInt(KEY_MANUAL_HIGHLIGHTED_NUMBER, gameState.highlightedNumber)
+            editor.putInt(KEY_MANUAL_EMPTY_CELLS_COUNT, gameState.emptyCellsCount)
 
             editor.apply()
             true
@@ -170,6 +176,7 @@ object SudokuStateStorage {
             val selectedCol = prefs.getInt(KEY_MANUAL_SELECTED_COL, 0)
             val mistakes = prefs.getInt(KEY_MANUAL_MISTAKES, 0)
             val highlightedNumber = prefs.getInt(KEY_MANUAL_HIGHLIGHTED_NUMBER, 0)
+            val emptyCellsCount = prefs.getInt(KEY_MANUAL_EMPTY_CELLS_COUNT, 40)
 
             // 重新检查完成状态和错误状态
             val updatedBoard = board.mapIndexed { r, rowData ->
@@ -188,7 +195,8 @@ object SudokuStateStorage {
                 elapsedTime = 0L,  // 时间由调用者设置
                 isComplete = isComplete,
                 mistakes = mistakes,
-                highlightedNumber = highlightedNumber
+                highlightedNumber = highlightedNumber,
+                emptyCellsCount = emptyCellsCount
             )
         } catch (e: Exception) {
             e.printStackTrace()

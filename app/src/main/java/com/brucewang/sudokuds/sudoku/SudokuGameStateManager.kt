@@ -45,7 +45,8 @@ object SudokuGame {
             elapsedTime = 0L,
             isComplete = false,
             mistakes = 0,
-            highlightedNumber = 0  // 初始没有高亮数字
+            highlightedNumber = 0,  // 初始没有高亮数字
+            emptyCellsCount = difficulty  // 保存难度
         )
         sessionStartTime = System.currentTimeMillis()
         totalElapsedSeconds = 0L
@@ -183,11 +184,15 @@ object SudokuGame {
                 highlightedNumber = value  // 填写数字后，高亮新数字
             )
 
-            // 如果游戏完成，暂停计时器并删除自动存档
+            // 如果游戏完成，暂停计时器、删除自动存档并记录统计
             if (isComplete) {
                 pauseTimer()
                 appContext?.let { context ->
                     SudokuStateStorage.clearSavedGame(context)
+                    // 记录完成统计
+                    gameState?.let { gs ->
+                        com.brucewang.sudokuds.StatisticsManager.recordCompletion(context, gs.emptyCellsCount)
+                    }
                 }
             } else {
                 autoSave()

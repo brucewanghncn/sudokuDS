@@ -79,6 +79,12 @@ class SecondaryActivity : ComponentActivity() {
                                 val intent = Intent(this@SecondaryActivity, InstructionsActivity::class.java)
                                 startActivity(intent)
                             },
+                            onStatistics = {
+                                showMenu = false
+                                ActivityLifecycleSync.isSettingsOpen = true
+                                val intent = Intent(this@SecondaryActivity, StatisticsActivity::class.java)
+                                startActivity(intent)
+                            },
                             onExit = {
                                 showMenu = false
                                 ActivityLifecycleSync.finishAll()

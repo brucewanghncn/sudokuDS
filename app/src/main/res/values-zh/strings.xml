@@ -7,6 +7,7 @@
     <string name="menu_swap_screens">交换上下屏</string>
     <string name="menu_switch_language">Switch Language</string>
     <string name="menu_instructions">操作说明</string>
+    <string name="menu_statistics">统计</string>
     <string name="menu_exit">退出程序</string>
 
     <!-- 设置 -->
@@ -20,6 +21,21 @@
     <string name="settings_author">brucewanghncn</string>
     <string name="settings_version">版本 1.0</string>
     <string name="settings_back">返回</string>
+    <!-- 统计 -->
+    <string name="statistics_title">游戏统计</string>
+    <string name="statistics_completed_games">已完成游戏</string>
+    <string name="statistics_easy_completed">简单难度</string>
+    <string name="statistics_medium_completed">中等难度</string>
+    <string name="statistics_hard_completed">困难难度</string>
+    <string name="statistics_total_completed">总计完成</string>
+    <string name="statistics_games">局</string>
+    <string name="statistics_no_data">暂无完成记录</string>
+    <string name="statistics_reset">重置统计</string>
+    <string name="statistics_reset_confirm">确定要重置所有统计数据吗？</string>
+    <string name="statistics_reset_success">统计数据已重置</string>
+    <string name="statistics_cancel">取消</string>
+    <string name="statistics_confirm">确定</string>
+
 
     <!-- 操作说明 -->
     <string name="instructions_title">操作说明</string>

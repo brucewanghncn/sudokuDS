@@ -7,6 +7,7 @@
     <string name="menu_swap_screens">Swap Screens</string>
     <string name="menu_switch_language">切换语言</string>
     <string name="menu_instructions">Instructions</string>
+    <string name="menu_statistics">Statistics</string>
     <string name="menu_exit">Exit</string>
 
     <!-- Settings -->
@@ -20,6 +21,21 @@
     <string name="settings_author">brucewanghncn</string>
     <string name="settings_version">Version 1.0</string>
     <string name="settings_back">Back</string>
+
+    <!-- Statistics -->
+    <string name="statistics_title">Game Statistics</string>
+    <string name="statistics_completed_games">Completed Games</string>
+    <string name="statistics_easy_completed">Easy Difficulty</string>
+    <string name="statistics_medium_completed">Medium Difficulty</string>
+    <string name="statistics_hard_completed">Hard Difficulty</string>
+    <string name="statistics_total_completed">Total Completed</string>
+    <string name="statistics_games">Games</string>
+    <string name="statistics_no_data">No completed games yet</string>
+    <string name="statistics_reset">Reset Statistics</string>
+    <string name="statistics_reset_confirm">Are you sure you want to reset all statistics?</string>
+    <string name="statistics_reset_success">Statistics reset successfully</string>
+    <string name="statistics_cancel">Cancel</string>
+    <string name="statistics_confirm">Confirm</string>
 
     <!-- Instructions -->
     <string name="instructions_title">Instructions</string>

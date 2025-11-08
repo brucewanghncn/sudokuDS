@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ExitToApp
+import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Refresh
@@ -30,6 +31,7 @@ fun HamburgerMenu(
     onSwapScreens: () -> Unit,
     onLanguageSwitch: () -> Unit,
     onInstructions: () -> Unit,
+    onStatistics: () -> Unit,
     onExit: () -> Unit
 ) {
     AlertDialog(
@@ -73,6 +75,15 @@ fun HamburgerMenu(
                     label = { Text(stringResource(R.string.menu_instructions)) },
                     selected = false,
                     onClick = onInstructions
+                )
+
+                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+
+                NavigationDrawerItem(
+                    icon = { Icon(Icons.Default.DateRange, contentDescription = stringResource(R.string.menu_statistics)) },
+                    label = { Text(stringResource(R.string.menu_statistics)) },
+                    selected = false,
+                    onClick = onStatistics
                 )
 
                 HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))

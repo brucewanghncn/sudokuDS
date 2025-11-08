@@ -38,6 +38,10 @@
             android:name=".InstructionsActivity"
             android:exported="false"
             android:theme="@style/Theme.DualScreen" />
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DualScreen" />
     </application>
 
 </manifest>

@@ -87,6 +87,12 @@ class MainActivity : ComponentActivity() {
                                 val intent = Intent(this@MainActivity, InstructionsActivity::class.java)
                                 startActivity(intent)
                             },
+                            onStatistics = {
+                                showMenu = false
+                                ActivityLifecycleSync.isSettingsOpen = true
+                                val intent = Intent(this@MainActivity, StatisticsActivity::class.java)
+                                startActivity(intent)
+                            },
                             onExit = {
                                 showMenu = false
                                 ActivityLifecycleSync.finishAll()

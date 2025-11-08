@@ -22,6 +22,7 @@ data class SudokuGameState(
     val elapsedTime: Long = 0L,           // 已用时间（秒）
     val isComplete: Boolean = false,      // 是否完成
     val mistakes: Int = 0,                // 错误次数
-    val highlightedNumber: Int = 0        // 当前高亮的数字（0表示无高亮）
+    val highlightedNumber: Int = 0,       // 当前高亮的数字（0表示无高亮）
+    val emptyCellsCount: Int = 40         // 初始空格数量（难度：30简单/40中等/50困难）
 )
 
