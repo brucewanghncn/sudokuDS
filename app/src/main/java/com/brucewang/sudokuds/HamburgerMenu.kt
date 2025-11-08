@@ -50,7 +50,7 @@ fun HamburgerMenu(
                     onClick = onSettings
                 )
 
-                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+                HorizontalDivider(modifier = Modifier.padding(vertical = 2.dp))
 
                 NavigationDrawerItem(
                     icon = { Icon(Icons.Default.Refresh, contentDescription = stringResource(R.string.menu_swap_screens)) },
@@ -59,7 +59,7 @@ fun HamburgerMenu(
                     onClick = onSwapScreens
                 )
 
-                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+                HorizontalDivider(modifier = Modifier.padding(vertical = 2.dp))
 
                 NavigationDrawerItem(
                     icon = { Icon(Icons.Default.Info, contentDescription = stringResource(R.string.menu_switch_language)) },
@@ -68,7 +68,7 @@ fun HamburgerMenu(
                     onClick = onLanguageSwitch
                 )
 
-                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+                HorizontalDivider(modifier = Modifier.padding(vertical = 2.dp))
 
                 NavigationDrawerItem(
                     icon = { Icon(Icons.Default.Notifications, contentDescription = stringResource(R.string.menu_instructions)) },
@@ -77,7 +77,7 @@ fun HamburgerMenu(
                     onClick = onInstructions
                 )
 
-                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+                HorizontalDivider(modifier = Modifier.padding(vertical = 2.dp))
 
                 NavigationDrawerItem(
                     icon = { Icon(Icons.Default.DateRange, contentDescription = stringResource(R.string.menu_statistics)) },
@@ -86,7 +86,7 @@ fun HamburgerMenu(
                     onClick = onStatistics
                 )
 
-                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+                HorizontalDivider(modifier = Modifier.padding(vertical = 2.dp))
 
                 NavigationDrawerItem(
                     icon = { Icon(Icons.AutoMirrored.Filled.ExitToApp, contentDescription = stringResource(R.string.menu_exit)) },
