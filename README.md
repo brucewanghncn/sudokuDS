@@ -57,7 +57,35 @@ A Sudoku game optimized for dual-screen devices, built with Jetpack Compose and 
 
 ## 📸 截图 | Screenshots
 
-_Coming soon..._
+### 开始界面 | Start Screen
+
+![alt 开始界面](images/start.png)
+![alt 开始界面底部](images/start-bottom.png)
+
+### 游戏界面 | Game Interface
+
+![alt 游戏界面上屏](images/game-top.png)
+![alt 游戏界面下屏](images/game-bottom.png)
+
+### 屏幕切换 | Screen Swap
+
+![alt 切换后上屏](images/swap-top.png)
+![alt 切换后下屏](images/swap-bottom.png)
+
+### 菜单与统计 | Menu & Statistics
+
+![alt 菜单界面](images/menu-bottom.png)
+![alt 统计界面](images/statistics-bottom.png)
+
+### 多语言支持 | Multi-language Support
+
+![alt 英文界面](images/top-eng.png)
+![alt 英文底部界面](images/english-bottom.png)
+
+### 游戏说明 | Instructions
+
+![alt 中文说明](images/instructions-chs.png)
+![alt 英文说明](images/instructions-eng.png)
 
 ## 👤 作者 | Author
 
