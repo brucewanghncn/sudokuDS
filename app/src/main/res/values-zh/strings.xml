@@ -19,7 +19,7 @@
     <string name="settings_nothing_desc">确实没有</string>
     <string name="settings_app_name">双屏数独</string>
     <string name="settings_author">brucewanghncn</string>
-    <string name="settings_version">版本 1.0</string>
+    <string name="settings_version">版本 1.1</string>
     <string name="settings_back">返回</string>
     <!-- 统计 -->
     <string name="statistics_title">游戏统计</string>
@@ -42,7 +42,8 @@
     <string name="instructions_gamepad">手柄操作</string>
     <string name="instructions_gamepad_dpad">方向键/左摇杆：移动选中格子</string>
     <string name="instructions_gamepad_buttons">数字键：填写/标记数字</string>
-    <string name="instructions_gamepad_back">Back键：打开菜单</string>
+    <string name="instructions_gamepad_back">屏幕侧边滑动/RC键/返回键：打开菜单</string>
+    <string name="instructions_gamepad_b">B键：擦除选中格子</string>
     <string name="instructions_game">游戏说明</string>
     <string name="instructions_game_rule">数独规则：每行、每列、每个3x3宫格内数字1-9不重复</string>
     <string name="instructions_game_difficulty">难度选择：简单30空格、中等40空格、困难50空格</string>

@@ -19,7 +19,7 @@
     <string name="settings_nothing_desc">Really nothing</string>
     <string name="settings_app_name">Dual Screen Sudoku</string>
     <string name="settings_author">brucewanghncn</string>
-    <string name="settings_version">Version 1.0</string>
+    <string name="settings_version">Version 1.1</string>
     <string name="settings_back">Back</string>
 
     <!-- Statistics -->
@@ -42,7 +42,8 @@
     <string name="instructions_gamepad">Gamepad Controls</string>
     <string name="instructions_gamepad_dpad">D-Pad/Left Stick: Move selected cell</string>
     <string name="instructions_gamepad_buttons">Number Keys: Fill/Mark numbers</string>
-    <string name="instructions_gamepad_back">Back Button: Open menu</string>
+    <string name="instructions_gamepad_back">Back Button/RC: Open menu</string>
+    <string name="instructions_gamepad_b">B Button: clear selected cell</string>
     <string name="instructions_game">Game Rules</string>
     <string name="instructions_game_rule">Sudoku Rule: Each row, column, and 3x3 box must contain digits 1-9 without repetition</string>
     <string name="instructions_game_difficulty">Difficulty: Easy 30 cells, Medium 40 cells, Hard 50 cells</string>

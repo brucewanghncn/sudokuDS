@@ -31,7 +31,7 @@ class InstructionsActivity : ComponentActivity() {
 
         setContent {
             DualScreenTheme {
-                SettingsScreen(
+                InstructionsScreen(
                     onBackClick = {
                         ActivityLifecycleSync.isSettingsOpen = false
                         finish()
@@ -91,7 +91,8 @@ fun InstructionsScreen(onBackClick: () -> Unit) {
                 items = listOf(
                     stringResource(R.string.instructions_gamepad_dpad),
                     stringResource(R.string.instructions_gamepad_buttons),
-                    stringResource(R.string.instructions_gamepad_back)
+                    stringResource(R.string.instructions_gamepad_back),
+                    stringResource(R.string.instructions_gamepad_b)
                 )
             )
 
